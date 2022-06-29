@@ -17,14 +17,12 @@ export const useModal = ({ modal, modalHandler }) => {
 
         const element = modalRef.current;
 
-        element.addEventListener('click', () => {
-            modalHandler()
-        })
-        window.addEventListener('keydown', () => modalHandler())
+        element.addEventListener('click', (e) => e.target.id === 'modal' && modalHandler())
+        window.addEventListener('keydown', (e) => e.key === 'Escape' && modalHandler())
 
         return () => {
-            element.removeEventListener('click', () => modalHandler())
-            window.addEventListener('keydown', () => modalHandler())
+            element.removeEventListener('click', (e) => e.target.id === 'modal' && modalHandler())
+            window.addEventListener('keydown', (e) => e.key === 'Escape' && modalHandler())
         };
 
     }, [modal, modalHandler])

@@ -4,7 +4,6 @@ const Form = memo(({
     modalHandler,
     formChangeHandler
 }) => {
-    console.log('rendered');
     return (
         <div id='form-container' className="form-container">
             <form
