@@ -1,0 +1,32 @@
+@import url('./font-style.css');
+@import url('./button-style.css');
+@import url('./modal/modal-style.css');
+@import url('./form/form-style.css');
+body{
+  font-family: "Lato",sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 20px;
+  line-height: 1.6;
+  height: 100vh;
+}
+  
+.component-padding {
+  padding: 15px 20px;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.border-top{
+  border-top: 1px solid rgb(189, 189, 189);
+}
+
+.border-bottom{
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.w-full{
+  width: 100%;
+}

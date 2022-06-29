@@ -1,0 +1,35 @@
+.form-container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.input-text {
+    letter-spacing: 1;
+    color: gray;
+    padding: 5px;
+    font-size: 13px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.input-text:focus {
+    outline:none;
+}
+
+.input-text:last-child{
+    margin-bottom: 0px;
+}
