@@ -7,7 +7,7 @@ react-js/.pnp.js
 
 # testing
 react-js/coverage
-react-js/package.lock.json
+react-js/package-lock.json
 
 # production
 react-js/build
